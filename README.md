@@ -7,9 +7,9 @@ See [template-ts-preact-htm-app](https://github.com/nichoth/template-ts-preact-h
 See [template-ts-preact-htm](https://github.com/nichoth/template-ts-preact-htm) for something similar but for dependency modules.
 
 ## use
-1. Use the template button in github. Or clone this then `rm -rf .git && git init`. Then `npm i && npm init`.
-
-2. Edit the source code in `src/`.
+1. Use the template button in github. Or clone this then `rm -rf .git && git init`. 
+2. Then `npm i && npm init`.
+3. Edit the source code in `src/`.
 
 ## featuring
 
