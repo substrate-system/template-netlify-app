@@ -22,6 +22,13 @@ See [template-ts-preact-htm](https://github.com/nichoth/template-ts-preact-htm) 
 * CI via github actions
 * routing via [route-event](https://github.com/nichoth/route-event) and [@nichoth/routes](https://github.com/nichoth/routes)
 
+## develop
+
+Start a localhost server, and serve the netlify serverless functions locally. Note the lambda functions are accessible at the path `/api/` from the frontend code.
+
+```sh
+npm start
+```
 
 ## architecture
 
