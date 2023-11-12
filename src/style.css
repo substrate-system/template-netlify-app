@@ -20,3 +20,8 @@ body {
         margin-bottom: 1rem;
     }
 }
+
+pre {
+    padding: 2rem;
+    background-color: #d3d3d363;
+}

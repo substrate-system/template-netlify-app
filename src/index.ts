@@ -5,6 +5,7 @@ import {
     ButtonOutline
 } from '@nichoth/components/htm/button-outline'
 import { createDebug } from '@nichoth/debug'
+import ky from 'ky'
 import { State, Increase, Decrease } from './state.js'
 import Router from './routes/index.js'
 import '@nichoth/components/button-outline.css'
@@ -13,6 +14,9 @@ import './style.css'
 const router = Router()
 const state = State()
 const debug = createDebug()
+
+// example of calling our API
+const json = await ky.get('/api/example').json()
 
 export function Example () {
     debug('rendering example...')
@@ -36,14 +40,21 @@ export function Example () {
     }
 
     return html`<div>
-        <h1>hello</h1>
+        <h1>example</h1>
 
+        <h2>the API response</h2>
+        <pre>
+            ${JSON.stringify(json, null, 2)}
+        </pre>
+
+        <h2>routes</h2>
         <ul>
             <li><a href="/aaa">aaa</a></li>
             <li><a href="/bbb">bbb</a></li>
             <li><a href="/ccc">ccc</a></li>
         </ul>
 
+        <h2>counter</h2>
         <div>
             <div>count: ${state.count.value}</div>
             <ul class="count-controls">

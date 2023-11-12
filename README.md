@@ -27,4 +27,4 @@ See [this article](https://gomakethings.com/easier-state-management-with-preact-
 
 We create application state and logic in the file [./src/state.ts](./src/state.ts). This exports static functions, creates a state object, and sets up URL routing.
 
-In the view code, you would call the functions exposed here with a state object, in response to application events.
+In the view code, you would call the functions exposed in [state](./src/state.ts) with a state instance in response to application events.
