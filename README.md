@@ -13,7 +13,7 @@ See [template-ts-preact-htm](https://github.com/nichoth/template-ts-preact-htm) 
 
 ## featuring
 
-* `preversion` npm hook -- lint via `standardx`.
+* `preversion` npm hook -- lint.
 * `postversion` npm hook -- `git push && git push --tags`
 * eslint via [standardx](https://www.npmjs.com/package/standardx) -- `npm run lint`
 * test in a browser environment via `tape-run` -- see `npm test`. Includes `tap` testing tools -- [tapzero](https://github.com/nichoth/tapzero) and [tap-arc](https://www.npmjs.com/package/tap-arc)
