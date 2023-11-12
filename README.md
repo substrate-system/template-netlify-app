@@ -10,6 +10,7 @@ See [template-ts-preact-htm](https://github.com/nichoth/template-ts-preact-htm) 
 1. Use the template button in github. Or clone this then `rm -rf .git && git init`. 
 2. Then `npm i && npm init`.
 3. Edit the source code in `src/`.
+4. Add the project to [netlify](https://www.netlify.com/)
 
 ## featuring
 
