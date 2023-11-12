@@ -4,6 +4,7 @@
     "module": "NodeNext",
     "target": "ES2022",
     "types": ["vite/client"],
+    "typeRoots": ["./node_modules"],
     "moduleResolution": "nodenext",
     "esModuleInterop": false,
     "lib": ["ES2022", "DOM", "WebWorker"],
@@ -23,7 +24,7 @@
     "noImplicitAny": false,
     "declaration": true,
     "declarationDir": "public",
-    "declarationMap": true
+    "declarationMap": true,
   },
   "include": [
     "example",
