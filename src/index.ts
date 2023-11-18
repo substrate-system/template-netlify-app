@@ -6,7 +6,7 @@ import {
 } from '@nichoth/components/htm/button-outline'
 import { createDebug } from '@nichoth/debug'
 import ky from 'ky'
-import { State, Increase, Decrease } from './state.js'
+import { State } from './state.js'
 import Router from './routes/index.js'
 import '@nichoth/components/button-outline.css'
 import './style.css'
@@ -31,12 +31,12 @@ export function Example () {
 
     function plus (ev) {
         ev.preventDefault()
-        Increase(state)
+        State.Increase(state)
     }
 
     function minus (ev) {
         ev.preventDefault()
-        Decrease(state)
+        State.Decrease(state)
     }
 
     return html`<div>

@@ -30,10 +30,10 @@ export function State ():{
     return state
 }
 
-export function Increase (state:ReturnType<typeof State>) {
+State.Increase = function (state:ReturnType<typeof State>) {
     state.count.value++
 }
 
-export function Decrease (state:ReturnType<typeof State>) {
+State.Decrease = function (state:ReturnType<typeof State>) {
     state.count.value--
 }
