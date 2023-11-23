@@ -11,6 +11,7 @@
     "build": "mkdir -p ./public && rm -rf ./public/* && vite build",
     "start": "concurrently --kill-others \"npx ntl functions:serve --port=9999 --debug\" \"npx vite\"",
     "preversion": "npm run lint",
+    "version": "auto-changelog --template keepachangelog --breaking-pattern 'BREAKING CHANGE' && git add CHANGELOG.md",
     "postversion": "git push && git push --tags",
     "prepublishOnly": "npm run build"
   },
@@ -29,6 +30,7 @@
     "@nichoth/tapzero": "^0.8.4",
     "@preact/preset-vite": "^2.5.0",
     "@typescript-eslint/parser": "^5.55.0",
+    "auto-changelog": "^2.4.0",
     "concurrently": "^8.2.2",
     "esbuild": "^0.19.5",
     "netlify-cli": "^17.2.2",
