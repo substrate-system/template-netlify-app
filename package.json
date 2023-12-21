@@ -16,7 +16,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@nichoth/components": "^0.14.1",
+    "@nichoth/components": "^0.15.1",
     "@nichoth/routes": "^3.0.7",
     "@preact/signals": "^1.2.2",
     "htm": "^3.1.1",
@@ -26,10 +26,10 @@
   },
   "devDependencies": {
     "@netlify/functions": "^2.4.0",
-    "@nichoth/debug": "^0.3.0",
+    "@nichoth/debug": "^0.3.1",
     "@nichoth/tapzero": "^0.8.4",
-    "@preact/preset-vite": "^2.5.0",
-    "@typescript-eslint/parser": "^6.12.0",
+    "@preact/preset-vite": "^2.7.0",
+    "@typescript-eslint/parser": "^6.15.0",
     "auto-changelog": "^2.4.0",
     "concurrently": "^8.2.2",
     "esbuild": "^0.19.9",
@@ -39,7 +39,7 @@
     "tap-arc": "^1.2.2",
     "tape-run": "^11.0.0",
     "typescript": "^5.0.2",
-    "vite": "^5.0.2"
+    "vite": "^5.0.10"
   },
   "author": "nichoth <nichoth@nichoth.com> (https://nichoth.com)",
   "license": "AGPL-3.0-or-later"
