@@ -1,6 +1,7 @@
 import { html } from 'htm/preact'
+import { FunctionComponent } from 'preact'
 
-export function HomeRoute () {
+export const HomeRoute:FunctionComponent = function HomeRoute () {
     return html`<div class="route">
         home route
     </div>`

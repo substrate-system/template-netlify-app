@@ -1,5 +1,5 @@
 import { html } from 'htm/preact'
-import { render } from 'preact'
+import { FunctionComponent, render } from 'preact'
 import {
     Primary as ButtonOutlinePrimary,
     ButtonOutline
@@ -18,7 +18,7 @@ const debug = createDebug()
 // example of calling our API
 const json = await ky.get('/api/example').json()
 
-export function Example () {
+export const Example:FunctionComponent = function Example () {
     debug('rendering example...')
     const match = router.match(state.route.value)
     const ChildNode = match.action(match, state.route)
