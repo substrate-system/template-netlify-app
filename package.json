@@ -21,10 +21,11 @@
     "@preact/signals": "^1.2.3",
     "htm": "^3.1.1",
     "ky": "^1.2.3",
-    "preact": "^10.20.1",
+    "preact": "^10.20.2",
     "route-event": "^4.2.20"
   },
   "devDependencies": {
+    "@bicycle-codes/tapzero": "^0.9.2",
     "@netlify/functions": "^2.6.0",
     "@nichoth/debug": "^0.6.7",
     "@preact/preset-vite": "^2.8.2",
