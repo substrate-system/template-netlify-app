@@ -35,7 +35,7 @@
     "esbuild": "^0.20.2",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
-    "netlify-cli": "^17.21.1",
+    "netlify-cli": "^17.22.0",
     "postcss-nesting": "^12.1.1",
     "tap-arc": "^1.2.2",
     "tape-run": "^11.0.0",
