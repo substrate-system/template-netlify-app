@@ -6,6 +6,10 @@
     "babelOptions": {
     }
   },
+  "extends": [
+    "standard",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "rules": {
     "operator-linebreak": ["off"],
     "multiline-ternary": "off",
