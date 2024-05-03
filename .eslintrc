@@ -11,6 +11,14 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "_|__",
+        "varsIgnorePattern": "_|__",
+        "caughtErrorsIgnorePattern": "_|__"
+      }
+    ],
     "operator-linebreak": ["off"],
     "multiline-ternary": "off",
     "no-multiple-empty-lines": [
