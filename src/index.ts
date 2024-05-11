@@ -4,7 +4,7 @@ import {
     Primary as ButtonOutlinePrimary,
     ButtonOutline
 } from '@nichoth/components/htm/button-outline'
-import { createDebug } from '@nichoth/debug'
+import { createDebug } from '@bicycle-codes/debug'
 import ky from 'ky'
 import { State } from './state.js'
 import Router from './routes/index.js'
