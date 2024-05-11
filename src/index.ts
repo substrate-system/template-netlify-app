@@ -15,6 +15,11 @@ const router = Router()
 const state = State()
 const debug = createDebug()
 
+if (import.meta.env.DEV || import.meta.env.MODE === 'staging') {
+    // @ts-expect-error DEV env
+    window.state = state
+}
+
 // example of calling our API
 const json = await ky.get('/api/example').json()
 
