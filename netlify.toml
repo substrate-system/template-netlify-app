@@ -6,6 +6,7 @@
       Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept, Authorization"
       Access-Control-Max-Age = "2592000"
       Access-Control-Allow-Credentials = "true"
+      # Cache-Control = "public,max-age=31536000,immutable"
 
 [[redirects]]
   from = "/api/*"
