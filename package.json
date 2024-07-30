@@ -22,10 +22,10 @@
     "htm": "^3.1.1",
     "ky": "^1.2.3",
     "preact": "^10.20.2",
-    "route-event": "^4.2.25"
+    "route-event": "^5.2.3"
   },
   "devDependencies": {
-    "@bicycle-codes/tapzero": "^0.9.2",
+    "@bicycle-codes/tapzero": "^0.10.3",
     "@netlify/functions": "^2.6.0",
     "@bicycle-codes/debug": "^0.6.8",
     "@preact/preset-vite": "^2.8.2",
@@ -33,7 +33,7 @@
     "@typescript-eslint/parser": "^7.1.0",
     "auto-changelog": "^2.4.0",
     "concurrently": "^8.2.2",
-    "esbuild": "^0.21.0",
+    "esbuild": "^0.23.0",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "netlify-cli": "^17.23.1",
