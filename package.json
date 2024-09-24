@@ -35,7 +35,7 @@
     "auto-changelog": "^2.4.0",
     "concurrently": "^8.2.2",
     "cssnano": "^7.0.4",
-    "esbuild": "^0.23.0",
+    "esbuild": "^0.24.0",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "netlify-cli": "^17.23.1",
