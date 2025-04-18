@@ -7,7 +7,7 @@
     "lint": "eslint \"./**/*.{ts,js}\"",
     "build-tests": "esbuild test/index.ts --bundle --format=cjs --keep-names > test/test-bundle.js",
     "test": "npm run lint && npm run build && npm run build-tests && npm run test-tape-run",
-    "test-tape-run": "cat test/index.html | tape-run --input=html --static=test | tap-spec",
+    "test-tape-run": "cat test/index.html | npx tape-run --input=html --static=test | npx tap-spec",
     "build": "mkdir -p ./public && rm -rf ./public/* && vite build",
     "start": "concurrently --kill-others \"npx ntl functions:serve --port=9999 --debug\" \"npx vite\"",
     "preversion": "npm run lint",
