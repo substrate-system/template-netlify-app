@@ -40,7 +40,7 @@
     "netlify-cli": "^20.0.2",
     "postcss-nesting": "^13.0.1",
     "stylelint": "^16.13.0",
-    "stylelint-config-standard": "^37.0.0",
+    "stylelint-config-standard": "^38.0.0",
     "tap-spec": "^5.0.0",
     "tape-run": "^11.0.0",
     "typescript": "^5.8.2",
