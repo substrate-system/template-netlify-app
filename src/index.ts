@@ -26,7 +26,7 @@ const json = await ky.get('/api/example').json()
 export const Example:FunctionComponent = function Example () {
     debug('rendering example...')
     const match = router.match(state.route.value)
-    const ChildNode = match.action(match, state.route)
+    const ChildNode = match.action(match, state.route.value)
 
     if (!match) {
         return html`<div class="404">
