@@ -1,6 +1,6 @@
 import type { Context, Config } from '@netlify/functions'
 
-const handler = async (req:Request, context:Context) => {
+export default async (req:Request, context:Context) => {
     const { param, splat } = context.params
     if (req.method !== 'GET') {
         return new Response(null, { status: 405 })
@@ -18,5 +18,3 @@ const handler = async (req:Request, context:Context) => {
 export const config:Config = {
     path: ['/api/example/:param?', '/api/example/splat/*']
 }
-
-export default handler
