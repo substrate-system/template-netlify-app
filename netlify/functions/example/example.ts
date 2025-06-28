@@ -16,7 +16,7 @@ const handler = async (req:Request, context:Context) => {
 }
 
 export const config:Config = {
-    path: ['/api/example/:param', '/api/example/splat/*']
+    path: ['/api/example/:param?', '/api/example/splat/*']
 }
 
 export default handler
