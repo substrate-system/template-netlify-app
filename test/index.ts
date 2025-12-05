@@ -3,3 +3,8 @@ import { test } from '@substrate-system/tapzero'
 test('example', async t => {
     t.ok('ok', 'should be an example')
 })
+
+test('all done', () => {
+    // @ts-expect-error tests
+    window.testsFinished = true
+})

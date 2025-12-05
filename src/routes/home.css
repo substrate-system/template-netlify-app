@@ -1,0 +1,5 @@
+.route.home {
+    & .count-controls {
+        margin-top: 1rem;
+    }
+}

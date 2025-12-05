@@ -27,14 +27,16 @@ for something similar but for dependency modules.
 
 * `preversion` npm hook -- lint.
 * `postversion` npm hook -- `git push && git push --tags`
-* eslint via [standardx](https://www.npmjs.com/package/standardx) -- `npm run lint`
-* test in a browser environment via `tape-run` -- see `npm test`.
-  Includes `tap` testing tools -- [tapzero](https://github.com/nichoth/tapzero) and [tap-arc](https://www.npmjs.com/package/tap-arc)
+* lint via [eslint](https://github.com/eslint/eslint) -- `npm run lint`
+* test in a browser environment via `tapout` -- see `npm test`.
+  Includes `tap` testing tools -- [tapzero](https://github.com/nichoth/tapzero),
+  [tap-spec](https://www.npmjs.com/package/tap-spec), and
+  [tapout](https://github.com/substrate-system/tapout)
 * CI via github actions
 * routing via [route-event](https://github.com/nichoth/route-event) and
   [@nichoth/routes](https://github.com/nichoth/routes)
 
-## develop
+## Develop
 
 Start a localhost server, and serve the netlify serverless functions locally.
 Note the lambda functions are accessible at the path `/api/` from the
@@ -44,10 +46,22 @@ frontend code.
 npm start
 ```
 
-## architecture
+## Test
+
+```sh
+npm test
+```
+
+### A11y tests
+
+```sh
+npm run test-a11y
+```
+
+## Architecture
 
 See [this article](https://gomakethings.com/easier-state-management-with-preact-signals/)
-for more details about application architecture.
+for more details about application structure.
 
 We create application state and logic in the file
 [./src/state.ts](./src/state.ts). This exports static functions, creates

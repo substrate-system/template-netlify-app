@@ -1,4 +1,5 @@
-import type { Context, Config } from '@netlify/functions'
+// import type { Context, Config } from '@netlify/functions'
+import type { Context } from '@netlify/functions'
 
 export default async (req:Request, context:Context) => {
     const { param, splat } = context.params
@@ -13,8 +14,4 @@ export default async (req:Request, context:Context) => {
             'Netlify-CDN-Cache-Control': 'public, durable, max-age=60, stale-while-revalidate=120'
         }
     })
-}
-
-export const config:Config = {
-    path: ['/api/example/:param?', '/api/example/splat/*']
 }
