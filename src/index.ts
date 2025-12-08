@@ -2,7 +2,7 @@ import { html } from 'htm/preact'
 import { type FunctionComponent, render } from 'preact'
 import Debug from '@substrate-system/debug'
 import { State } from './state.js'
-import Router from './routes/index.js'
+import Router, { routes } from './routes/index.js'
 import './style.css'
 
 const router = Router()
@@ -35,12 +35,7 @@ export const Example:FunctionComponent = function Example () {
         <header>
             <h1>ABC</h1>
 
-            <nav aria-label="Main navigation">
-                <ul>
-                    <li><a href="/">home</a></li>
-                    <li><a href="/contact">contact</a></li>
-                </ul>
-            </nav>
+            <${Nav} route=${state.route.value} />
         </header>
 
         <${ChildNode} state=${state} />
@@ -51,4 +46,18 @@ render(html`<${Example} />`, document.getElementById('root')!)
 
 function isDev ():boolean {
     return !!(import.meta.env.DEV || import.meta.env.MODE === 'staging')
+}
+
+function Nav ({ route }:{ route:string }):ReturnType<typeof html> {
+    return html`<nav aria-label="Main navigation">
+        <ul>
+            ${routes.map(r => {
+                return html`<li class="nav${route === r.href ? ' active' : ''}">
+                    <a href="${r.href}">${r.text}</a>
+                </li>`
+            })}
+        </ul>
+    </nav>`
+
+    // <li><a href="/contact">contact</a></li> -->
 }

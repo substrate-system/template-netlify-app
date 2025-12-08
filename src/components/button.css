@@ -15,8 +15,7 @@ a.btn, button.btn {
     transform: translateY(1px);
 
     &:focus {
-        outline: 2px solid var(--focus-color);
-        border-color: var(--focus-color);
+        outline: 2px solid black;
     }
 
     &:hover {

@@ -1,4 +1,5 @@
 @import url("../node_modules/@substrate-system/css-normalize/dist/index.css");
+@import url("../node_modules/@substrate-system/a11y/dist/index.css");
 
 :root {
     --focus-color: #00c8ff;
@@ -34,6 +35,23 @@ hr {
 
 nav {
     margin: 2rem 0;
+
+    & li {
+        & a {
+            transition: all 0.2s;
+            text-decoration-style: solid;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 1px;
+        }
+
+        &.active {
+            & a {
+                text-decoration-thickness: 2px;
+                text-underline-offset: 3px;
+                text-decoration-style: solid;
+            }
+        }
+    }
 
     & ul {
         list-style: none;
