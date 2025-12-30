@@ -1,5 +1,6 @@
 import { html } from 'htm/preact'
 import { type FunctionComponent, render } from 'preact'
+import { useMemo } from 'preact/hooks'
 import Debug from '@substrate-system/debug'
 import { State } from './state.js'
 import Router, { routes } from './routes/index.js'
@@ -20,8 +21,11 @@ if (isDev()) {
 }
 
 export const Example:FunctionComponent = function Example () {
-    debug('rendering example...')
-    const match = router.match(state.route.value)
+    debug('rendering example...', state)
+
+    const match = useMemo(() => {
+        return router.match(state.route.value)
+    }, [state.route.value])
 
     if (!match || !match.action) {
         return html`<div class="404">

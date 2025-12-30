@@ -1,5 +1,7 @@
-import { Signal, signal } from '@preact/signals'
+import { type Signal, signal } from '@preact/signals'
 import Route from 'route-event'
+// import Debug from '@substrate-system/debug'
+// const debug = Debug(import.meta.env.DEV)
 
 /**
  * Setup any state
