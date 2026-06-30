@@ -1,6 +1,6 @@
-import { Page, expect } from '@playwright/test'
+import { type Page, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
-import type { AxeResults, Result as AxeResult, ImpactValue } from 'axe-core'
+import type { AxeResults, ImpactValue } from 'axe-core'
 
 /**
  * Default axe configuration for WCAG 2.1 Level AA compliance
@@ -183,7 +183,7 @@ export async function testKeyboardNavigation (
 ): Promise<void> {
     for (const selector of selectors) {
         await page.keyboard.press('Tab')
-        const focusedElement = await page.evaluate(() => {
+        await page.evaluate(() => {
             const el = document.activeElement
             return {
                 tagName: el?.tagName,
@@ -264,7 +264,7 @@ export async function expectProperLabel (
 export async function checkColorContrast (
     page: Page,
     selector: string,
-    expectedRatio: number = 4.5
+    _expectedRatio: number = 4.5
 ): Promise<void> {
     // Run axe specifically for color-contrast on this element
     const results = await new AxeBuilder({ page })
